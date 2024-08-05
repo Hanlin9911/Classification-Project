@@ -15,12 +15,12 @@ The 33 columns can be divided into 8 categories:
 8. `Churn Reason` - Not further explored as it only exists after a customer churns.
 
 **Major Findings**  
-0. Under `Total Charges`, there are unknown ` `, which cannot be converted to numeric values. The blanks were replaced by 0 as all customers with a blank under this columns also has a `Tenure Months` of 0, which is indicating their first bill was not ready leading to 0s in `Total Charges`. 
 1. Among numeric features, `Churn Score` has the highest correlation with `Churn Value`. `Tenure Months`, `Total Charges` and `Monthly Charges` are also good predictors of `Churn Value.`
 2. `Total Charges` has a strong positive linear relationship with `Tenure Months` * `Monthly Charges` -> Among those three variables, a maximum of 2 can kept in the model to avoid multicollinearity issue. For this reason, `Total Charges` was chosen to be left out.
 3. Although in the data resource page, it was stated that `Zip Code` has a strong correlation with `Churn Value`, this was not seen in the EDA.
 4. Among the categorical features, only `Partener` is not strongly correlated to `Churn Value`.
 5. All the sevices columns were not included in this part but would be further explored in Model 3.
+6. Under `Total Charges`, there are unknown ` `, which cannot be converted to numeric values. The blanks were replaced by 0 as all customers with a blank under this columns also has a `Tenure Months` of 0, which is indicating their first bill was not ready leading to 0s in `Total Charges`. 
 
 ## Functions used in modeling
 There are three major functions that are used in modeling. 
