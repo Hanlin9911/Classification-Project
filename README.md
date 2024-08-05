@@ -8,7 +8,7 @@ The 33 columns can be divided into 8 categories:
 1. Customer Identification - `CustomerID`, `Count` -> These columns were not further explored as they do not have any power in terms of target.
 2. Location - `Zip Code`, `Country`, `State`, `City`, `Lat Long`, `Latitude`, `Longitude` -> Only `Zip Code` was explored as it is mentioned in the data source page. The rest contains overlapping information
 3. Customer Labels - `Gender`, `Senior Citizen`, `Partner`, `Dependents`, `Churn Score`, `CLTV`, `Tenure Months` -> `Gender` was not further explored.
-4. Services - Phone Service`, `Multiple Lines`, `Internet Service`, `Online Security`,`Online Backup`, `Device Protection`, `Tech Support`, `Streaming TV`, `Streaming Movies`
+4. Services - `Phone Service`, `Multiple Lines`, `Internet Service`, `Online Security`,`Online Backup`, `Device Protection`, `Tech Support`, `Streaming TV`, `Streaming Movies`
 5. Payments - `Paperless Billing`, `Payment Method` -> These were not explored as customers can change their payment method and billing relatively easy by themselves.
 6. Price Related - `Contract`, `Monthly Charges`, `Total Charges` -> Further explored
 7. Target - `Churn Label`, `Churn Value` -> Contains same information, `Churn Value` was used as target.
